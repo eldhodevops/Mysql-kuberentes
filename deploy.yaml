@@ -64,8 +64,6 @@ spec:
         persistentVolumeClaim:
           claimName: mysql-dump-claim
       - name: mysql-log
-        #persistentVolumeClaim:
-        # claimName: mysql-log-claim
         hostPath:
          path: /mysqllogs
          #type: Directory
