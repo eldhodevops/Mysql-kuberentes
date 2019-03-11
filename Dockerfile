@@ -1,4 +1,5 @@
 FROM mysql:5.7
+MAINTAINER Eldhose P Wilson
 RUN apt-get update && \
     apt-get install cron supervisor rsyslog rsyslog-doc procps -y
 RUN mkdir /script && \
